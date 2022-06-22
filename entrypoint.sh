@@ -11,7 +11,7 @@ else
 fi
 
 if [ -n "$MODULE_DIR" ]; then
-  cd $MODULE_DIR && pdk test unit --format=text $additional_opts
+  cd $MODULE_DIR && pdk validate --format=text $additional_opts
 else
-  pdk test unit --format=text $additional_opts
+  pdk validate --format=text $additional_opts
 fi
